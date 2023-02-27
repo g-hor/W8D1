@@ -40,7 +40,7 @@ class ControllerBase
   # pass the rendered html to render_content
   def render(template_name)
     erb = ERB.new(File.read(template_name))
-    erb.def_method(self.class, 'render(@req, @res)', template_name)
+    
   end
 
   # method exposing a `Session` object
